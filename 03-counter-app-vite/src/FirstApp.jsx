@@ -12,4 +12,6 @@ export const FirstApp = (props) => {
   );
 };
 
-FirstApp.prototype ={}
+FirstApp.propTypes ={
+    title: PropTypes.string
+}
