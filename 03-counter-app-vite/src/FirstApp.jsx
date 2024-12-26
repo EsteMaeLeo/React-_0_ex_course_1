@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 //show variable
 const newMessage = "Leo";
 
@@ -10,3 +11,5 @@ export const FirstApp = (props) => {
     </>
   );
 };
+
+FirstApp.prototype ={}
