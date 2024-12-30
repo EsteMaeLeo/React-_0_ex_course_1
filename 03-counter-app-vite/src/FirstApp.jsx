@@ -1,19 +1,26 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 //show variable
 const newMessage = "Leo";
 
 //export const FirstApp = (props) => {
-    export const FirstApp = ({title, subtitle}) => {  
-    
+export const FirstApp = ({ title, subtitle }) => {
   return (
     <>
-      <h1>First App { subtitle } {title}</h1>
+      <h1>
+        First App {subtitle} {title}
+      </h1>
       <p>First Paragraph</p>
     </>
   );
 };
 
-FirstApp.propTypes ={
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-}
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
+
+FirstApp.defaultProps = {
+  name: "Josph Carling",
+  subtitle: "No subtitle",
+  title: "No title",
+};
